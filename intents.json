@@ -1,0 +1,470 @@
+{
+"intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Hey", "Assalam o Alaikum", "Salam", "Good morning",
+        "Good evening", "Howdy", "Hii", "Helloo", "AOA", "Aoa", "Walaikum assalam"
+      ],
+      "responses": [
+        "Assalam o Alaikum! Welcome to SafarWise. How can I help you plan your Pakistan adventure today?",
+        "Hello! I am Safi, your SafarWise AI travel assistant. What would you like to know?",
+        "Wa Alaikum Assalam! Great to have you here. Ask me anything about our Pakistan tours and packages."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "Goodbye", "See you", "Take care", "Later", "Khuda hafiz", "Allah hafiz", "Ok bye", "Acha"
+      ],
+      "responses": [
+        "Allah Hafiz! Come back when you are ready to explore Pakistan with SafarWise!",
+        "Goodbye! We hope to help you plan your Pakistan adventure soon.",
+        "Take care! SafarWise is always here when you need travel guidance."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks", "Thank you", "Shukriya", "Thank you so much", "Thanks a lot",
+        "Appreciate it", "Jazak Allah", "JazakAllah"
+      ],
+      "responses": [
+        "You are most welcome! Is there anything else I can help you with?",
+        "Happy to help! Let me know if you have more questions about our Pakistan tours.",
+        "Shukriya for using SafarWise! Feel free to ask anything else."
+      ]
+    },
+    {
+      "tag": "safarwise",
+      "patterns": [
+        "What is SafarWise", "About SafarWise", "Who are you", "Tell me about SafarWise",
+        "What does SafarWise do", "SafarWise team", "Who made SafarWise",
+        "About this website", "About Safi", "What is this platform",
+        "Tell me about this website", "Who built SafarWise", "about Company"
+      ],
+      "responses": [
+        "SafarWise is a Pakistan's travel platform built as a Final Year Project at Superior University Lahore. We offer 12 curated tour packages, 6 Lahore city tours, travel blogs, a booking system, and me 'Safi' your AI travel assistant! Our team: Abrar Aziz, Atif Gujjar, and Moavia Khalid.",
+        "SafarWise is a complete Pakistan tourism platform for booking tours, exploring destinations, and getting AI-powered travel help. Built by Software Engineering students at Superior University Lahore. I am Safi, the AI chatbot trained specifically on Pakistan travel!"
+      ]
+    },
+    {
+      "tag": "how are you",
+      "patterns": [
+        "How are you",
+        "How are you doing",
+        "How do you feel",
+        "Are you okay",
+        "How is it going",
+        "Whats up",
+        "What's up",
+        "Sup",
+        "Kya haal hai",
+        "Kaise ho",
+        "How are you Safi",
+        "You good",
+        "You okay"
+      ],
+      "responses": [
+        "I am doing great, thank you for asking! I am here and ready to help you plan your Pakistan adventure. What would you like to know?",
+        "All good and running smoothly! Ready to help you explore Pakistan. Ask me anything about our tour packages or city tours!",
+        "I am doing well! As an AI I do not have feelings but I am fully operational and happy to assist you. What can I help you with today?"
+      ]
+    },
+    {
+      "tag": "who are you",
+      "patterns": [
+        "Who are you",
+        "What are you",
+        "What is your name",
+        "Your name",
+        "Are you a robot",
+        "Are you AI",
+        "Are you human",
+        "Are you a bot",
+        "Who am I talking to",
+        "What can you do",
+        "Introduce yourself"
+      ],
+      "responses": [
+        "I am Safi, the AI travel assistant for SafarWise! I was trained on Pakistan travel data using a custom PyTorch neural network. I can help you with tour packages, prices, city tours, booking guidance, visa info, and much more about Pakistan tourism.",
+        "My name is Safi and I am the SafarWise AI chatbot. I am not a human, I am a custom-trained AI model built specifically for Pakistan travel assistance. Ask me anything about our tours!"
+      ]
+    },
+    {
+      "tag": "out of scope",
+      "patterns": [
+        "What is the weather today",
+        "Stock market",
+        "News today",
+        "Cricket score",
+        "Tell me a joke",
+        "Sing a song",
+        "What is 2 plus 2",
+        "Mathematics",
+        "Politics",
+        "Football",
+        "Who is the president",
+        "Recipe",
+        "Cook",
+        "Movie recommendation",
+        "Music",
+        "Technology news",
+        "Gaming",
+        "Tell me something",
+        "Random fact",
+        "What time is it",
+        "Date today",
+        "Capital of france",
+        "History of world"
+      ],
+      "responses": [
+        "That is outside what I know about! I am trained only on Pakistan travel and SafarWise tour information. For that kind of question you would need a general search engine. But if you have any travel questions about Pakistan I am all yours!",
+        "I am afraid I do not have information about that I am a specialized travel assistant for SafarWise Pakistan tours only. Try asking me about tour packages, prices, destinations, or how to book a trip!",
+        "That is a bit beyond my knowledge area. I only know about Pakistan tourism, our tour packages, city tours, and SafarWise services. Is there anything travel-related I can help you with?"
+      ]
+    },
+    {
+      "tag": "compliment",
+      "patterns": [
+        "You are great",
+        "You are awesome",
+        "Good job",
+        "Well done",
+        "Nice",
+        "You are helpful",
+        "You are smart",
+        "I like you",
+        "You are amazing",
+        "Excellent",
+        "Perfect",
+        "Wonderful",
+        "You are the best",
+        "Shabash"
+      ],
+      "responses": [
+        "Thank you so much! That really means a lot. I am here to make your Pakistan travel planning as easy as possible. Anything else I can help you with?",
+        "Shukriya! I am glad I could help. Feel free to ask me anything else about our Pakistan tours!",
+        "That is very kind of you! I am just doing my job helping you discover the beauty of Pakistan. What else would you like to know?"
+      ]
+    },
+    {
+      "tag": "complaint",
+      "patterns": [
+        "You are not helpful",
+        "Bad bot",
+        "Useless",
+        "You are wrong",
+        "Wrong answer",
+        "That is incorrect",
+        "I do not understand your answer",
+        "Not good",
+        "Poor response",
+        "You are confusing me"
+      ],
+      "responses": [
+        "I am sorry about that! I am still learning and I may not always get things right. Could you rephrase your question? Or you can reach our team directly at +92 343 4106919 and they will be happy to help.",
+        "Apologies for the confusion! I am a specialized chatbot and sometimes I miss the mark. Please try asking your question differently, or contact SafarWise directly at +92 343 4106919."
+      ]
+    },
+    {
+      "tag": "language",
+      "patterns": [
+        "Speak Urdu",
+        "Can you speak Urdu",
+        "Urdu mein baat karo",
+        "Do you know Urdu",
+        "Urdu bolte ho",
+        "Speak in Urdu"
+      ],
+      "responses": [
+        "Assalam o Alaikum! Main Safi hoon, SafarWise ka AI travel assistant. Abhi meri Urdu limited hai lekin main English mein aapki poori madad kar sakta hoon Pakistan travel ke baare mein. Koi bhi tour package ya city tour ke baare mein poochein!",
+        "Main thori Urdu samajhta hoon! Lekin abhi English mein zyada behtar jawab de sakta hoon. Pakistan ke tours ke baare mein kuch janana chahte hain?"
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "How old are you",
+        "When were you born",
+        "Your age",
+        "When were you created",
+        "When was SafarWise made"
+      ],
+      "responses": [
+        "I was trained and built in 2026 as part of the SafarWise Final Year Project at The Superior University Lahore. So I am pretty new! My knowledge about Pakistan travel is fresh and up to date.",
+        "SafarWise and I were both created in 2026 by a team of Software Engineering students at The Superior University Lahore. I am trained on Pakistan travel data from 2026."
+      ]
+    },
+    {
+      "tag": "packages",
+      "patterns": [
+        "What packages do you have", "Show me tour packages", "What tours are available",
+        "Tell me about your packages", "What trips do you offer", "Available tours",
+        "Tour packages", "What can I book", "Travel packages", "Holiday packages",
+        "List of packages", "All packages", "Show packages", "What are your tours",
+        "Tour options", "How many packages", "Pakistan tour packages"
+      ],
+      "responses": [
+        "We have 12 amazing Pakistan tour packages! Highlights: K2 Base Camp 14 days PKR 89,000 Hunza Valley Blossom 7 days PKR 35,000 Fairy Meadows 5 days PKR 27,000 Skardu Deosai 6 days PKR 32,000 Karakoram Highway 10 days PKR 58,000 Lahore Heritage 4 days PKR 14,500 and more! Go to our Packages page to see all 12.",
+        "SafarWise has 12 curated Pakistan tours from PKR 14,500 to PKR 89,000. Destinations include Hunza, K2, Skardu, Fairy Meadows, Lahore, Swat, Naran, Neelum Valley, Kumrat, Gwadar, and the full KKH road trip. Which destination interests you?"
+      ]
+    },
+    {
+      "tag": "city_tours",
+      "patterns": [
+        "City tours", "Lahore city tour", "Lahore tours", "What city tours do you have",
+        "Tell me about city tours", "Lahore heritage tour", "Lahore food tour",
+        "Walled city tour", "Mughal tour", "Wagah border tour", "Food street tour",
+        "Shalimar gardens tour", "Lahore museum tour", "City tour prices",
+        "How much is city tour", "Book city tour", "City tour inquiry",
+        "I want to know about city tours", "What are the city tours",
+        "Show city tours", "Lahore guided tour", "Complete Lahore tour"
+      ],
+      "responses": [
+        "We have 6 Lahore City Tours! 1) Walled City Heritage Walk 1 Day PKR 2,500. 2) Mughal Monuments Tour 1 Day PKR 3,500. 3) Lahore Food Street Experience Evening PKR 1,800. 4) Shalimar Gardens and Museums 1 Day PKR 2,800. 5) Wagah Border Ceremony Half Day PKR 1,500. 6) Complete Lahore City Tour 2 Days PKR 8,500. Go to City Tours page to book!",
+        "SafarWise Lahore City Tours start from PKR 1,500. We cover Lahore Fort, Badshahi Mosque, Walled City, Food Street, Wagah Border, Shalimar Gardens, and more. All tours include expert local guide. Click City Tours in the menu to see full details and book!"
+      ]
+    },
+    {
+      "tag": "hunza",
+      "patterns": [
+        "Tell me about Hunza", "Hunza tour", "Hunza Valley", "Karimabad",
+        "Attabad Lake", "Baltit Fort", "Hunza blossom", "Eagle nest Hunza",
+        "How to visit Hunza", "Hunza package", "Hunza price", "Hunza trip",
+        "Hunza Valley tour price", "Rakaposhi"
+      ],
+      "responses": [
+        "Our Hunza Valley Blossom Tour is 7 days for PKR 35,000 per person. Includes Baltit Fort, Eagle's Nest sunrise viewpoint above Rakaposhi, Attabad Lake boat ride, cherry blossom walks, and Ganish heritage village. Hotel, all meals, transport and expert guide included!",
+        "Hunza Valley is breathtaking! Our 7-day tour at PKR 35,000 covers Karimabad, Altit Fort, Attabad Lake boat ride, Eagle's Nest panoramic viewpoint, and apricot orchards. Best time April for blossoms or May to October."
+      ]
+    },
+    {
+      "tag": "k2",
+      "patterns": [
+        "K2 base camp", "K2 trek", "Baltoro glacier", "Concordia", "K2 expedition",
+        "K2 package", "K2 price", "Skardu trek", "How to reach K2",
+        "K2 base camp price", "K2 tour", "K2 trekking"
+      ],
+      "responses": [
+        "Our K2 Base Camp Expedition is 14 days for PKR 89,000. It covers Baltoro Glacier, Concordia the Throne Room of Mountain Gods and K2 Base Camp at 5,150 metres. Includes guide, porters, camping, all meals and permits. Pakistan's most prestigious trek!",
+        "K2 Base Camp is 14 days for PKR 89,000. Trek from Askole through the Baltoro Glacier, passing Trango Towers, reaching Concordia where K2, Broad Peak, and Gasherbrum all come into view. Best time June to August."
+      ]
+    },
+    {
+      "tag": "fairy_meadows",
+      "patterns": [
+        "Fairy meadows", "Nanga Parbat", "Raikot", "Beyal camp",
+        "Fairy meadows tour", "Fairy meadows price", "How to reach fairy meadows",
+        "Camp at fairy meadows", "Fairy meadows camping", "Killer mountain"
+      ],
+      "responses": [
+        "Our Fairy Meadows and Nanga Parbat tour is 5 days for PKR 27,000. Stay at 3,300 metres with a stunning front-row view of Nanga Parbat! Includes the famous cliff road jeep ride, Beyal Camp trek at 3,500m, stargazing, camping and all meals.",
+        "Fairy Meadows 5-day tour PKR 27,000 includes camping, all meals, jeep ride from Raikot Bridge, guided trek to Beyal Camp for even closer Nanga Parbat views. No light pollution the stargazing is extraordinary!"
+      ]
+    },
+    {
+      "tag": "skardu",
+      "patterns": [
+        "Skardu tour", "Deosai plains", "Shangrila resort", "Satpara lake",
+        "Shigar fort", "Skardu package", "Cold desert skardu", "Upper kachura",
+        "Brown bear deosai", "Skardu price", "How to go skardu", "Deosai national park"
+      ],
+      "responses": [
+        "Our Skardu and Deosai Plains Safari is 6 days for PKR 32,000. Covers Deosai world's second highest plateau Himalayan Brown Bear spotting, Sheosar Lake at 4,142 metres, Shangrila Resort, Satpara Lake boat ride, Shigar Fort, and Cold Desert!",
+        "Skardu 6-day tour at PKR 32,000 includes Deosai National Park wildlife spotting, Satpara Lake boat ride, Shigar Valley 400-year-old fort, Cold Desert, and Shangrila Resort. 4x4 jeep and wildlife guide included!"
+      ]
+    },
+    {
+      "tag": "lahore",
+      "patterns": [
+        "Lahore tour", "Badshahi mosque", "Lahore fort", "Food street lahore",
+        "Walled city lahore", "Wagah border", "Shalimar gardens", "Lahore package",
+        "Lahore heritage", "Mughal monuments lahore", "Lahore price", "Visit lahore",
+        "Lahore trip", "Lahore attractions"
+      ],
+      "responses": [
+        "Our Lahore Heritage and Food Tour is 4 days for PKR 14,500. Covers Badshahi Mosque, UNESCO-listed Lahore Fort with Sheesh Mahal, Walled City heritage walk, Fort Road Food Street dinner, Shalimar Gardens, and Wagah Border ceremony!",
+        "Lahore is Pakistan's cultural capital! Our 4-day tour at PKR 14,500 covers Mughal monuments, legendary food streets of Gawalmandi and Fort Road, and the spectacular Wagah Border flag ceremony. Perfect for history and food lovers!"
+      ]
+    },
+    {
+      "tag": "swat",
+      "patterns": [
+        "Swat tour", "Malam jabba", "Kalam valley", "Mahodand lake", "Swat package",
+        "Swat price", "Switzerland of pakistan", "Swat buddhist ruins", "Swat valley tour"
+      ],
+      "responses": [
+        "Our Swat Valley and Malam Jabba tour is 5 days for PKR 21,000. Includes Malam Jabba chairlift with mountain views, Mahodand Lake trek through pine forests, ancient Buddhist ruins at Butkara, and Kalam Valley.",
+        "Swat is called the Switzerland of Pakistan! Our 5-day tour at PKR 21,000 covers Malam Jabba ski resort area, Kalam Valley, Mahodand Lake, and centuries-old Buddhist ruins. Best April to October."
+      ]
+    },
+    {
+      "tag": "naran",
+      "patterns": [
+        "Naran kaghan", "Saif ul malook", "Babusar top", "Shogran", "Lulusar lake",
+        "Naran tour", "Naran price", "Kaghan valley", "Naran package", "Naran trip"
+      ],
+      "responses": [
+        "Our Naran Kaghan Valley Tour is 5 days for PKR 18,500. Highlights: Saif ul Malook Lake at 3,224 metres (Pakistan's most famous lake), Babusar Top at 4,173 metres, Lulusar Lake, Shogran plateau with Siri Paye meadows, and horse riding!",
+        "Naran Kaghan 5-day tour at PKR 18,500 covers Saif ul Malook Lake, Babusar Top, Lulusar Lake, Lalazar plateau, and the beautiful Shogran meadows. Breakfast, dinner and transport included!"
+      ]
+    },
+    {
+      "tag": "kkh",
+      "patterns": [
+        "Karakoram highway", "KKH", "Khunjerab pass", "Road trip pakistan",
+        "KKH road trip", "Karakoram road trip", "Khunjerab border",
+        "Passu cones", "Karakoram highway price", "KKH package", "KKH tour"
+      ],
+      "responses": [
+        "Our Karakoram Highway Road Trip is 10 days for PKR 58,000 the trip of a lifetime! Drive from Lahore to Khunjerab Pass at 4,693 metres on the China border. Stops include Chilas, Gilgit, Hunza, Attabad Lake, Passu Cones. Private vehicle, all meals, guide included!",
+        "The KKH is called the Eighth Wonder of the World! Our 10-day road trip at PKR 58,000 drives from Lahore to the China border through the most spectacular mountain scenery on Earth. Khunjerab Pass, Hunza Valley, Attabad Lake all included!"
+      ]
+    },
+    {
+      "tag": "neelum",
+      "patterns": [
+        "Neelum valley", "Azad kashmir", "Ratti gali", "Arang kel", "Sharda ruins",
+        "Neelum tour", "Neelum price", "Kashmir tour", "Neelum package"
+      ],
+      "responses": [
+        "Our Neelum Valley Azad Kashmir Tour is 5 days for PKR 16,500. Covers Ratti Gali Lake at 3,700 metres, Arang Kel hilltop village via cable car, ancient Sharda University ruins, and Keran at the Line of Control!",
+        "Neelum Valley is Kashmir's hidden gem! 5-day tour at PKR 16,500 includes turquoise Neelum River, Ratti Gali alpine lake, Arang Kel via cable car and trek, and historic Sharda ruins. Transport and guide included!"
+      ]
+    },
+    {
+      "tag": "gwadar",
+      "patterns": [
+        "Gwadar tour", "Makran coastal", "Kund malir", "Hingol national park",
+        "Princess of hope", "Makran highway", "Gwadar package", "Coastal tour pakistan",
+        "Gwadar price", "Balochistan tour", "Makran tour"
+      ],
+      "responses": [
+        "Our Makran Coastal Highway Adventure is 6 days for PKR 31,000. Arabian Sea coastline from Karachi to Gwadar Hingol National Park, Princess of Hope rock formation, Kund Malir Beach (Pakistan's most beautiful beach!), Chandragup mud volcanoes, and Gwadar port!",
+        "Makran Coast 6-day tour PKR 31,000 covers pristine Arabian Sea beaches, dramatic rock formations, mud volcanoes, and fresh seafood at Gwadar fish market. Best visited October to March when temperatures are cool!"
+      ]
+    },
+    {
+      "tag": "kumrat",
+      "patterns": [
+        "Kumrat valley", "Kumrat tour", "Dir tour", "Jahaz banda",
+        "Kumrat package", "Kumrat price", "Upper dir"
+      ],
+      "responses": [
+        "Our Kumrat Valley and Dir tour is 5 days for PKR 19,500. One of Pakistan's most beautiful off-beat valleys! Dense deodar forests, Jahaz Banda plateau at 3,400 metres, Do Kala waterfall, Panjkora River, and traditional Kohistani culture.",
+        "Kumrat Valley 5-day tour at PKR 19,500. Discover the green deodar forests of Upper Dir, the stunning Jahaz Banda plateau, crystal clear rivers, and wildflower meadows. 4x4 jeep and local guide included!"
+      ]
+    },
+    {
+      "tag": "hunza_skardu",
+      "patterns": [
+        "Hunza and skardu", "Hunza skardu combined", "Combined tour", "Both hunza and skardu",
+        "Hunza skardu package", "Hunza skardu price", "Northern pakistan combo"
+      ],
+      "responses": [
+        "Our Hunza and Skardu Combined tour is 9 days for PKR 52,000. The ultimate northern Pakistan experience! Baltit Fort, Eagle's Nest, Attabad Lake, Khunjerab Pass, Deosai Plains, Shangrila Resort, and Cold Desert. All in one trip!",
+        "Hunza plus Skardu Combined 9-day tour at PKR 52,000. Covers the best of both Hunza blossom valley with Eagle's Nest and Attabad Lake, then Skardu with Deosai Plains wildlife safari and Shigar Fort. Hotel, all meals, private vehicle included!"
+      ]
+    },
+    {
+      "tag": "price",
+      "patterns": [
+        "How much", "What is the price", "Cost of tour", "Price list", "Cheapest tour",
+        "Most expensive tour", "Budget tour", "Affordable tour", "Tour rates",
+        "Price range", "How much does it cost", "Rates", "Tour cost", "Cheapest package",
+        "How much for a tour", "What is cheapest", "Most expensive"
+      ],
+      "responses": [
+        "SafarWise tour prices: Lahore Heritage PKR 14,500 Neelum Valley PKR 16,500 Naran Kaghan PKR 18,500 Swat Valley PKR 21,000 Fairy Meadows PKR 27,000 Skardu Deosai PKR 32,000 Hunza Blossom PKR 35,000 KKH Road Trip PKR 58,000 K2 Base Camp PKR 89,000. City tours from PKR 1,500!",
+        "Our packages range from PKR 14,500 to PKR 89,000 per person. Cheapest is Lahore Heritage Tour 4 days PKR 14,500. Most popular is Hunza Valley 7 days PKR 35,000. Most premium is K2 Base Camp 14 days PKR 89,000. City tours from just PKR 1,500!"
+      ]
+    },
+    {
+      "tag": "booking",
+      "patterns": [
+        "How to book", "Book a tour", "Make a booking", "Reserve a package",
+        "How do I book", "Booking process", "How to reserve", "Can I book",
+        "I want to book", "Book now", "How booking works", "Booking inquiry",
+        "Submit booking", "Send inquiry", "How to send inquiry"
+      ],
+      "responses": [
+        "Booking is easy! Go to Packages page, pick your tour, click 'Send Booking Inquiry', fill in your name, phone, preferred date (within next 3 months), and number of travelers. Our team calls you within 24 hours to confirm. No payment needed for the inquiry!",
+        "To book: Select a package or city tour, click the booking button, enter your details and preferred travel date. Our team contacts you within 24 hours by phone. Date must be within the next 3 months. No advance payment needed at inquiry stage!"
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "Contact number", "Phone number", "How to contact", "WhatsApp", "Email",
+        "Office address", "Contact safarwise", "Get in touch", "Call safarwise",
+        "Customer service", "Support", "Contact info", "How to reach you"
+      ],
+      "responses": [
+        "Contact SafarWise: Phone and WhatsApp +92 343 4106919, Email safarwise32@gmail.com, Address Lahore Pakistan. Open Monday to Sunday 9:00 AM to 8:00 PM PKT. You can also click the green WhatsApp button on the website to chat directly!",
+        "Reach us at +92 343 4106919 (WhatsApp available) or email safarwise32@gmail.com. Office in Lahore. Open 7 days a week 9 AM to 8 PM. Or click the green WhatsApp floating button on the website!"
+      ]
+    },
+    {
+      "tag": "best_time",
+      "patterns": [
+        "Best time to visit", "When to go", "Which season", "Best month to travel",
+        "When is best time", "Summer or winter", "Best time for pakistan",
+        "When should I visit", "Travel season pakistan", "Best season"
+      ],
+      "responses": [
+        "Best travel times: Northern areas Hunza Skardu Swat Naran May to October. Lahore and cities October to March (cool and pleasant). Fairy Meadows June to September only. Makran Coast October to March. Cherry blossom season Hunza late March to April. Avoid July-August for road trips due to monsoon landslides!",
+        "Pakistan travel by season: North (Hunza, K2, Skardu, Swat) visit May to October. Lahore and historic cities October to March. Cherry blossoms in Hunza March to April absolutely magical! Makran coast October to March. Fairy Meadows June to September only."
+      ]
+    },
+    {
+      "tag": "visa",
+      "patterns": [
+        "Visa for pakistan", "Do I need visa", "Pakistan visa", "Entry requirements",
+        "Visa on arrival", "E-visa pakistan", "Visa requirements", "Permit for trekking",
+        "NOC for trekking", "Trekking permit"
+      ],
+      "responses": [
+        "Pakistan offers online e-visa for most countries. Apply at the official Pakistan e-visa portal processing takes 5 to 7 working days. Tourist visa is valid for 30 days. For K2 Base Camp trek, a No Objection Certificate (NOC) is also required SafarWise handles this for you as part of the package!",
+        "Pakistan e-visa available online for most nationalities. For northern treks like K2, additional permits are required SafarWise arranges everything. Always check latest visa requirements before traveling as policies change."
+      ]
+    },
+    {
+      "tag": "safety",
+      "patterns": [
+        "Is pakistan safe", "Safety in pakistan", "Is it safe to travel", "Security",
+        "Is pakistan dangerous", "Safe for tourists", "Travel advisory pakistan",
+        "Is northern pakistan safe", "Pakistan safe"
+      ],
+      "responses": [
+        "Pakistan is much safer than its international reputation suggests! The northern mountain regions Hunza, Skardu, Swat, Naran have very low crime rates and extremely welcoming local people. Millions of tourists visit safely every year. Traveling with SafarWise adds extra safety with licensed guides and experienced drivers.",
+        "Northern Pakistan is among the safest regions for tourists with incredibly hospitable local communities. SafarWise operates with licensed guides and experienced mountain drivers. Always travel with a registered operator for remote high-altitude areas."
+      ]
+    },
+    {
+      "tag": "includes",
+      "patterns": [
+        "What is included", "What does the package include", "Is hotel included",
+        "Is food included", "Is guide included", "Transport included",
+        "What is not included", "What do I need to bring", "Package includes",
+        "What is covered", "Meals included"
+      ],
+      "responses": [
+        "Most SafarWise packages include: hotel or camping accommodation, breakfast and dinner daily, private transport throughout, expert local guide, and major entry fees. NOT included: flights to starting point, lunches, personal shopping, travel insurance, and tips. Check the specific package detail page for the full includes and excludes list!",
+        "Package inclusions vary by tour but generally cover accommodation, meals (breakfast and dinner), transport, and guide. Flights, lunches, travel insurance and personal expenses are usually extra. Full includes and excludes lists are on each package's detail page!"
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "Weather in pakistan", "Temperature", "Climate", "What to wear",
+        "How cold is hunza", "Weather in skardu", "Pack for trip", "What to bring",
+        "Climate pakistan", "How cold at night"
+      ],
+      "responses": [
+        "Pakistan climate varies by region. Northern areas in summer (May-Oct): warm days 20-30°C, cold nights down to 5°C at altitude always bring warm layers. Lahore in winter (Nov-Feb): 5-20°C very pleasant. Makran coast (Oct-Mar): 20-30°C perfect beach weather. For K2 trek: nights can drop well below freezing even in July!",
+        "Packing tips: For Hunza and Skardu in summer bring warm jacket for cold nights even though days are warm. For Lahore visit November to February for 15-20°C days. Makran Coast October to March is ideal at 20-28°C. K2 trek needs expedition-level warm gear."
+      ]
+    }
+  ]
+}
